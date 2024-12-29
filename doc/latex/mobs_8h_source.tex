@@ -1,0 +1,80 @@
+\doxysection{mobs.\+h}
+\hypertarget{mobs_8h_source}{}\label{mobs_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MOBS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MOBS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ability.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Пространство\ имен\ для\ избежания\ конфликтов\ имен}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }game\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classgame_1_1_mob_a57944aae1dab9a5b02a5b6942c10d6c5}{Mob}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ mobName\_;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ experiencePoints\_;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ level\_;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }Stats\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ strength\_;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ magic\_;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ endurance\_;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ agility\_;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ luck\_;}
+\DoxyCodeLine{00037\ \ \ \ \ \}\ stats\_;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::vector<Ability>\ abilities\_;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classgame_1_1_mob_a57944aae1dab9a5b02a5b6942c10d6c5}{Mob}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{classgame_1_1_mob_a57944aae1dab9a5b02a5b6942c10d6c5}{Mob}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ exp,\ \textcolor{keywordtype}{int}\ lv,\ \textcolor{keywordtype}{int}\ st,\ \textcolor{keywordtype}{int}\ ma,\ \textcolor{keywordtype}{int}\ en,\ \textcolor{keywordtype}{int}\ ag,\ \textcolor{keywordtype}{int}\ lu);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classgame_1_1_mob_ac224078b4b12d6f9dbd533826aba726b}{\string~Mob}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ std::string\ \mbox{\hyperlink{classgame_1_1_mob_aca89597e623ac3223e4defdd22029d53}{getMobName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_ac3253c2d22b931ecbdf50fe89bcebd79}{getExperiencePoints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_a2449d637c2141a3afeb95297afdb3b2e}{getLevel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_a83d6e5f750270a22e9298eeb2683b96f}{getStrength}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_a09470c25099ee53991189ce5df6c1ab4}{getMagic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_a5609a95aa7a625f1efe5cf5dad46e7a4}{getEndurance}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_a6090b3bda9865f9bf9f7b0218ead4aff}{getAgility}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classgame_1_1_mob_abc33dbd4f317b7945829b4cb42c81c3b}{getLuck}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Ability>\&\ \mbox{\hyperlink{classgame_1_1_mob_ad2ac526bd5a02df2c4281684935ef355}{getAbilities}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a1029707d05448e2328c84cfcaf00b047}{addAbility}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classgame_1_1_ability}{Ability}}\&\ ability);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_ae0d11736006d0fa7cff2117b9be51414}{setMobName}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a38bd8b2de42b670ee2457791ad5dfa6f}{setStats}}(\textcolor{keywordtype}{int}\ strength,\ \textcolor{keywordtype}{int}\ magic,\ \textcolor{keywordtype}{int}\ endurance,\ \textcolor{keywordtype}{int}\ agility,\ \textcolor{keywordtype}{int}\ luck);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_abc57390b4e6c9dd38d99c0f306ccc4f4}{setExperiencePoints}}(\textcolor{keywordtype}{int}\ exp);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a0efe9fe93d2380bbada6ce92814e54bf}{setLevel}}(\textcolor{keywordtype}{int}\ level);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a8b1d61c98df45b0879a81c0bb889ecda}{setStrength}}(\textcolor{keywordtype}{int}\ strength);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a50fd5744ca757232658f7c6fd2a8f38d}{setMagic}}(\textcolor{keywordtype}{int}\ magic);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_adeb557483f060680b44091044866f71d}{setEndurance}}(\textcolor{keywordtype}{int}\ endurance);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a5c7993eb9edee4ca7a4e8d743a8d0e78}{setAgility}}(\textcolor{keywordtype}{int}\ agility);}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgame_1_1_mob_a06c6251ffe116b415a5e6726cdb8fb7f}{setLuck}}(\textcolor{keywordtype}{int}\ luck);}
+\DoxyCodeLine{00183\ \};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \}\ \textcolor{comment}{//\ namespace\ game}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MOBS\_H}}
+
+\end{DoxyCode}
